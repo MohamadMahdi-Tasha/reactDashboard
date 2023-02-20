@@ -14,7 +14,7 @@ export default function TopSideComponent() {
             </ul>
             <hr/>
             <ul>
-                <ThemeToggler title={'DarkMode'} />
+                <ThemeToggler />
                 <LeftListItem title={'Setting'} />
                 <LeftListItem title={'Logout'} />
             </ul>
