@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 import LeftListItem from "./sub-components/left-list-item";
+import ThemeToggler from "./sub-components/left-theme-toggler";
 
 export default function TopSideComponent() {
     return (
@@ -13,7 +14,7 @@ export default function TopSideComponent() {
             </ul>
             <hr/>
             <ul>
-                <DarkModeToggler title={'DarkMode'} />
+                <ThemeToggler title={'DarkMode'} />
                 <LeftListItem title={'Setting'} />
                 <LeftListItem title={'Logout'} />
             </ul>
