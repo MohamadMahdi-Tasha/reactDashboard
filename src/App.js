@@ -1,3 +1,3 @@
 // Codes By Mahdi Tasha
-import Dashboard from 'src/routes/dashboard';
+import Dashboard from './routes/dashboard';
 export default function App() {return <Dashboard />}
