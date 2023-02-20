@@ -11,6 +11,12 @@ export default function TopSideComponent() {
                 <LeftListItem title={'Calendar'} />
                 <LeftListItem title={'Profile'} />
             </ul>
+            <hr/>
+            <ul>
+                <DarkModeToggler title={'DarkMode'} />
+                <LeftListItem title={'Setting'} />
+                <LeftListItem title={'Logout'} />
+            </ul>
         </div>
     );
 }
