@@ -20,7 +20,7 @@ export default function LeftListItem(props) {
 
     return (
         <li>
-            <a href="#">
+            <a href={"#"}>
                 {icon}
                 {props.title}
             </a>
