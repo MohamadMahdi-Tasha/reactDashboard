@@ -1,14 +1,8 @@
 // Codes By Mahdi Tasha
-import React, { Component } from "react";
+import Dashboard from 'components/dashboard';
 
-export default class App extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (
-            <div><h1>App Component</h1></div>
-        )
-    }
+export default function App() {
+    return (
+        <Dashboard />
+    )
 }
