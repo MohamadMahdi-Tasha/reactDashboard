@@ -1,6 +1,6 @@
 // Codes By Mahdi Tasha
-import TopSideComponent from './top-side'
-import BottomSideComponent from './bottom-side';
+import TopSideComponent from './sub-components/top-side'
+import BottomSideComponent from './sub-components/bottom-side';
 
 export default function LeftSideComponent() {
     return (
