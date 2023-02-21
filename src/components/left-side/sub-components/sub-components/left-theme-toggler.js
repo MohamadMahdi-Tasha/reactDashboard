@@ -1,8 +1,6 @@
 // Codes By Mahdi Tasha
-import React, {useState} from "react";
+import {useState} from "react";
 
-
-// Codes By Mahdi Tasha
 export default function ThemeToggler() {
     const [theme, setTheme] = useState('dark')
     const [title, setTitle] = useState('Light Mode Toggler')
