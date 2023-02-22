@@ -1,1 +1,27 @@
 // Codes By Mahdi Tasha
+@use '../global';
+
+.dashboard {
+  display: flex;
+  padding: 1.5rem;
+}
+
+.right-side,.main-side {
+  display: none;
+}
+
+.left-side {
+  &__top-side {
+    background-color: global.$gunmetal;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__bottom-side {
+    background-color: global.$gunmetal;
+    padding: 1rem;
+    border-radius: 20px;
+    display: block;
+  }
+}

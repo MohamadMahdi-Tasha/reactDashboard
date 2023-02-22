@@ -6,7 +6,7 @@ import '../dist/style.css';
 
 export default function Dashboard() {
     return (
-        <div>
+        <div className='dashboard'>
             <LeftSideComponent />
             <MainSideComponent />
             <RightSideComponent />

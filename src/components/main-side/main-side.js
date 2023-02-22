@@ -4,7 +4,7 @@ import BottomSideComponent from "./sub-components/bottom-side";
 
 export default function MainSideComponent() {
     return (
-        <div>
+        <div className='main-side'>
             <TopSideComponent />
             <BottomSideComponent />
         </div>
