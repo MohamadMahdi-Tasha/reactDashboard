@@ -1,32 +1,7 @@
 // Codes By Mahdi Tasha
 import MainCircleStateComponent from "./sub-components/main-circle-state-component";
 import React from 'react';
-import {Chart as ChartJS,LineElement} from 'chart.js';
-import { Line } from 'react-chartjs-2';
-
-ChartJS.register(LineElement);
-
-const options = {
-    responsive: true,
-    scales: {
-        x: {grid: {display: false,},},
-        y: {grid: {display: false,},},
-    }
-};
-
-const labels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-
-const data = {
-    labels,
-    datasets: [
-        {
-            label: 'Dataset 1',
-            borderColor: 'white',
-            data: [200,250,270,300,250,300,350],
-            backgroundColor: 'white',
-        }
-    ],
-};
+import MainLineChart from "./sub-components/main-line-chart";
 
 export default function BottomSideComponent() {
     const date = new Date();
@@ -46,7 +21,7 @@ export default function BottomSideComponent() {
             <div>
                 <div>
                     <h6>{dayOfWeekName}, {dayOfMonth} {monthName} {year}</h6>
-                    <Line options={options} data={data} />
+                    <MainLineChart data={[200, 250, 300, 250, 260, 300, 350]}/>
                 </div>
             </div>
         </div>
