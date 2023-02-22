@@ -1,10 +1,10 @@
 // Codes By Mahdi Tasha
-import MainCircleStateComponent from "./sub-components/main-circle-state-component";
 import React from 'react';
 import MainLineChart from "./sub-components/main-line-chart";
 import MainSvgState from './sub-components/main-svg-state';
 import ImagePerson1 from '../../../assets/img/dashboard/main-side/img-person-1.png';
 import ImagePerson2 from '../../../assets/img/dashboard/main-side/img-person-2.png';
+import MainTopComponent from "./sub-components/main-top-component";
 
 export default function BottomSideComponent() {
     const date = new Date();
@@ -17,10 +17,7 @@ export default function BottomSideComponent() {
 
     return (
         <div>
-            <div>
-                <MainCircleStateComponent title={'Total Finance'} svgValue='75' value={9900}/>
-                <MainCircleStateComponent title={'Total Expense'} svgValue='80' value={8240}/>
-            </div>
+            <MainTopComponent />
             <div>
                 <div>
                     <h6>{dayOfWeekName}, {dayOfMonth} {monthName} {year}</h6>
