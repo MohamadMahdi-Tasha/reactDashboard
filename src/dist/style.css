@@ -411,12 +411,14 @@ legend {
   border-radius: 10px;
   background-color: #272D35;
   border: none;
+}
+.main-side__top-btn-inner-span {
   position: relative;
 }
 .main-side__top-btn-notif-count {
   position: absolute;
-  top: 5px;
-  right: 30px;
+  right: -5px;
+  top: -15px;
   width: 18px;
   height: 18px;
   background-color: #52449B;

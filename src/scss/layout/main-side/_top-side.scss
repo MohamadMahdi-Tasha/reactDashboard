@@ -57,13 +57,14 @@
     border-radius: 10px;
     background-color: global.$gunmetal;
     border: none;
-    position: relative;
   }
+
+  &__top-btn-inner-span {position: relative;}
 
   &__top-btn-notif-count {
     position: absolute;
-    top: 5px;
-    right: 30px;
+    right: -5px;
+    top: -15px;
     width: 18px;
     height: 18px;
     background-color: global.$blue-magenta-violet;

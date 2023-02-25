@@ -10,8 +10,10 @@ export default function MainNotifableButton(props) {
     return (
         <a href="#" className='main-side__top-btn-link'>
             <button className='main-side__top-btn' tabIndex={'-1'}>
-                {(props.notificationsCount !== 0) ? <span className='main-side__top-btn-notif-count'>{props.notificationsCount}</span> : false}
-                {icon}
+                <span className='main-side__top-btn-inner-span'>
+                    {(props.notificationsCount !== 0) ? <span className='main-side__top-btn-notif-count'>{props.notificationsCount}</span> : false}
+                    {icon}
+                </span>
             </button>
         </a>
     );
