@@ -39,16 +39,21 @@
     &::placeholder {color: global.$grey;}
   }
 
-  &__top-btn-link {display: block;}
+  &__top-btn-link {
+    display: block;
+    width: 50%;
+  }
+
   &__top-notif-btns-holder {
     display: flex;
+    width: 25%;
 
     &>a:first-of-type {margin-right: 1rem;}
   }
 
   &__top-btn {
     height: 50px;
-    width: 70px;
+    width: 100%;
     border-radius: 10px;
     background-color: global.$gunmetal;
     border: none;
@@ -58,7 +63,7 @@
   &__top-btn-notif-count {
     position: absolute;
     top: 5px;
-    right: 16px;
+    right: 30px;
     width: 18px;
     height: 18px;
     background-color: global.$blue-magenta-violet;

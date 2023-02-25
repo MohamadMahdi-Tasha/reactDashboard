@@ -396,16 +396,18 @@ legend {
 }
 .main-side__top-btn-link {
   display: block;
+  width: 50%;
 }
 .main-side__top-notif-btns-holder {
   display: flex;
+  width: 25%;
 }
 .main-side__top-notif-btns-holder > a:first-of-type {
   margin-right: 1rem;
 }
 .main-side__top-btn {
   height: 50px;
-  width: 70px;
+  width: 100%;
   border-radius: 10px;
   background-color: #272D35;
   border: none;
@@ -414,7 +416,7 @@ legend {
 .main-side__top-btn-notif-count {
   position: absolute;
   top: 5px;
-  right: 16px;
+  right: 30px;
   width: 18px;
   height: 18px;
   background-color: #52449B;
