@@ -4,9 +4,9 @@ import ThemeToggler from "./sub-components/left-theme-toggler";
 
 export default function TopSideComponent() {
     return (
-        <div className='left-side__top-side'>
+        <div>
             <ul>
-                <LeftListItem title={'Dashboard'} />
+                <LeftListItem title={'Dashboard'} active/>
                 <LeftListItem title={'Documents'} />
                 <LeftListItem title={'Payments'} />
                 <LeftListItem title={'Calendar'} />
