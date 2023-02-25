@@ -1,7 +1,66 @@
 // Codes By Mahdi Tasha
 @use '../global';
 
-// For Debugging
-.right-side,.main-side {display: none;}
+.left-side {
+  &__bottom {
+    display: block;
+    padding: 1rem;
+  }
 
-// Styles
+  &__top,&__bottom {
+    background-color: global.$gunmetal;
+    border-radius: 20px;
+  }
+
+  &__top {
+    margin-bottom: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  &__top-link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-block: 1rem;
+  }
+
+  &__top-ul-one > .left-side__top-item:last-of-type > .left-side__top-link{padding-bottom: 0;}
+  &__top-ul-one > .left-side__top-item:first-of-type > .left-side__top-link{padding-top: 0;}
+
+  &__top-link--active {
+    color: white;
+    font-weight: 700;
+  }
+
+  &__top-link:not(.left-side__top-link--active) {
+    color: global.$grey;
+    font-weight: 500;
+  }
+
+  &__top-link-icon {
+    margin-right: 1rem;
+  }
+
+  &__top-divider {
+    margin-block: 3rem;
+    border-color: global.$grey;
+  }
+
+  &__top-ul-two > li:last-of-type > a{padding-bottom: 0;}
+
+  &__top-theme-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 1rem;
+    white-space: nowrap;
+  }
+
+  &__top-theme-btn--theme-dark {color: global.$grey;}
+  &__top-theme-btn--theme-light {color: white;}
+  &__top-theme-icon {margin-right: 1rem;transition: .3s;}
+}

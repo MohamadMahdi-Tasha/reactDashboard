@@ -5,7 +5,7 @@ import ThemeToggler from "./sub-components/left-theme-toggler";
 export default function TopSideComponent() {
     return (
         <div className='left-side__top'>
-            <ul className={'left-side__top-ul-1'}>
+            <ul className={'left-side__top-ul-one'}>
                 <LeftListItem title={'Dashboard'} active/>
                 <LeftListItem title={'Documents'} />
                 <LeftListItem title={'Payments'} />
@@ -13,7 +13,7 @@ export default function TopSideComponent() {
                 <LeftListItem title={'Profile'} />
             </ul>
             <hr className={'left-side__top-divider'}/>
-            <ul className={'left-side__top-ul-2'}>
+            <ul className={'left-side__top-ul-two'}>
                 <ThemeToggler />
                 <LeftListItem title={'Setting'} />
                 <LeftListItem title={'Logout'} />

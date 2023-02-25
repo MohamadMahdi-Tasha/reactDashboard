@@ -20,7 +20,7 @@ export default function LeftListItem(props) {
 
     return (
         <li className='left-side__top-item'>
-            <a className='left-side__top-link' href={"#"}>
+            <a className={(props.active) ? 'left-side__top-link left-side__top-link--active' : 'left-side__top-link'} href={"#"}>
                 {icon}
                 {props.title}
             </a>
