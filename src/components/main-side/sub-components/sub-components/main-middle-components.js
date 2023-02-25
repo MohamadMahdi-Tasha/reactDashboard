@@ -14,32 +14,32 @@ export default function MainMiddleComponents(props) {
         const year = date.getFullYear();
 
         return (
-            <div>
-                <h6>{dayOfWeekName}, {dayOfMonth} {monthName} {year}</h6>
+            <div className='main-side__middle-comp'>
+                <h6 className='main-side__middle-com-title'>{dayOfWeekName}, {dayOfMonth} {monthName} {year}</h6>
                 <MainLineChart data={[200, 250, 300, 250, 260, 300, 350]}/>
             </div>
         )
 
     } else {
         return (
-            <div>
-                <div>
-                    <h6>Your Finance Target</h6>
+            <div className='main-side__middle-comp'>
+                <div className='main-side__middle-comp-top'>
+                    <h6 className='main-side__middle-comp-top-title'>Your Finance Target</h6>
                     <MainDropdown iconType={'vertical'}>
-                        <button>opt1</button>
-                        <button>opt2</button>
-                        <button>opt3</button>
+                        <button tabIndex='-1'>opt1</button>
+                        <button tabIndex='-1'>opt2</button>
+                        <button tabIndex='-1'>opt3</button>
                     </MainDropdown>
                 </div>
-                <MainSvgState for={'Your Finance Target'} value={78}/>
-                <div>
-                    <div>
-                        <h6><span></span>Result Achieved</h6>
-                        <p>Achieved well and smoothly</p>
+                <div className='main-side__middle-comp-svg-holder'><MainSvgState for={'Your Finance Target'} value={78}/></div>
+                <div className='main-side__middle-comp-bottom-holder'>
+                    <div className='main-side__middle-comp-bottom-item'>
+                        <h6 className='main-side__middle-comp-bottom-title'><span className='main-side__middle-comp-bottom-span-in-title main-side__middle-comp-bottom-span-in-title--1'></span>Result Achieved</h6>
+                        <p className='main-side__middle-comp-bottom-subtitle'>Achieved well and smoothly</p>
                     </div>
-                    <div>
-                        <h6><span></span>In The Process</h6>
-                        <p>Waiting in target process</p>
+                    <div className='main-side__middle-comp-bottom-item'>
+                        <h6 className='main-side__middle-comp-bottom-title'><span className='main-side__middle-comp-bottom-span-in-title main-side__middle-comp-bottom-span-in-title--2'></span>In The Process</h6>
+                        <p className='main-side__middle-comp-bottom-subtitle'>Waiting in target process</p>
                     </div>
                 </div>
             </div>

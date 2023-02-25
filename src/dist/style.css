@@ -280,7 +280,7 @@ legend {
   border-radius: 20px;
 }
 .left-side__top {
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
   padding: 2rem 1.5rem;
 }
 .left-side__top-link {
@@ -341,7 +341,7 @@ legend {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 .left-side__bottom-img {
   width: 70px;
@@ -429,6 +429,166 @@ legend {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main-side__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.main-side__bottom-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.main-side__bottom-top > .main-side__circle-state-component:first-of-type {
+  background: linear-gradient(95.04deg, #52449B 15.04%, #7D12AF 89.27%);
+}
+.main-side__bottom-top > .main-side__circle-state-component:last-of-type {
+  background: linear-gradient(102.27deg, #A453CB 0%, #8B10B6 100%);
+}
+.main-side__circle-state-component {
+  padding: 1rem;
+  box-shadow: 4px 24px 45px rgba(111, 76, 164, 0.16);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 150px;
+}
+.main-side__circle-state-component-title {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+.main-side__circle-state-component-subtitle {
+  color: white;
+  font-weight: 600;
+  font-size: 27px;
+}
+.main-side__bottom-bottom, .main-side__bottom-top, .main-side__middle {
+  grid-column: span 2;
+}
+.main-side__middle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.main-side__middle-comp {
+  background-color: #272D35;
+  padding: 1rem;
+  border-radius: 20px;
+  height: 253px;
+}
+.main-side__middle-com-title {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 3.2rem;
+}
+.main-side__dropdown-holder {
+  position: relative;
+}
+.main-side__dropdown-btn {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-side__dropdown {
+  position: absolute;
+  right: 0;
+  background-color: #52449B;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  width: 90px;
+  height: 150px;
+}
+.main-side__dropdown[data-opened=true] {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: visible;
+}
+.main-side__dropdown[data-opened=false] {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+.main-side__dropdown-li button {
+  display: block;
+  padding-inline: 0.5rem;
+  width: 90px;
+  height: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: start;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+.main-side__middle-comp-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-side__middle-comp-top-title {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+.main-side__middle-comp-svg-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 2.5rem;
+}
+.main-side__middle-comp-bottom-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.main-side__middle-comp-bottom-title {
+  display: flex;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 1rem;
+}
+.main-side__middle-comp-bottom-subtitle {
+  font-weight: 400;
+  font-size: 10px;
+  color: #919191;
+  margin-left: 1rem;
+}
+.main-side__middle-comp-bottom-span-in-title {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+.main-side__middle-comp-bottom-span-in-title--1 {
+  background: radial-gradient(518.44% 414.3% at 83.37% 8.51%, #8A40FC 0%, #D577F3 42.85%, #FA9BC4 86.98%);
+}
+.main-side__middle-comp-bottom-span-in-title--2 {
+  background-color: white;
+}
+.main-side__bottom-bottom {
+  height: 230px;
+  background-color: #272D35;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.main-side__bottom-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 2rem;
 }
 
 .right-side {

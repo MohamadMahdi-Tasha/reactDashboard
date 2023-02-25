@@ -6,7 +6,7 @@ import MainBottomComponent from "./sub-components/main-bottom-component";
 
 export default function BottomSideComponent() {
     return (
-        <div>
+        <div className={'main-side__bottom'}>
             <MainTopComponent />
             <MainMiddleComponent />
             <MainBottomComponent />

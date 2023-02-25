@@ -1,1 +1,179 @@
 // Codes By Mahdi Tasha
+@use "../../global";
+
+.main-side {
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  &__bottom-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    &>.main-side__circle-state-component:first-of-type {background: global.$magenta-violet-gradiant;}
+    &>.main-side__circle-state-component:last-of-type {background: global.$violet-gradiant;}
+  }
+
+  &__circle-state-component {
+    padding: 1rem;
+    box-shadow: 4px 24px 45px rgba(111, 76, 164, 0.16);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 150px;
+  }
+
+  &__circle-state-component-title {
+    color: white;
+    margin-bottom: .5rem;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__circle-state-component-subtitle {
+    color: white;
+    font-weight: 600;
+    font-size: 27px;
+  }
+
+  &__bottom-bottom, &__bottom-top, &__middle {
+    grid-column: span 2;
+  }
+
+  &__middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  &__middle-comp {
+    background-color: global.$gunmetal;
+    padding: 1rem;
+    border-radius: 20px;
+    height: 253px;
+  }
+  
+  &__middle-com-title {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 3.2rem;
+  }
+
+  &__dropdown-holder {position: relative;}
+
+  &__dropdown-btn {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__dropdown {
+    position: absolute;
+    right: 0;
+    background-color: global.$blue-magenta-violet;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    transition: .3s;
+    width: 90px;
+    height: 150px;
+
+    &[data-opened = 'true'] {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: visible;
+    }
+
+    &[data-opened = 'false'] {
+      opacity: 0;
+      transform: translateY(-20px);
+      pointer-events: none;
+    }
+  }
+
+  &__dropdown-li button{
+    display: block;
+    padding-inline: .5rem;
+    width: 90px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: start;
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__middle-comp-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__middle-comp-top-title {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__middle-comp-svg-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 2.5rem;
+  }
+
+  &__middle-comp-bottom-holder {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__middle-comp-bottom-title {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  &__middle-comp-bottom-subtitle {
+    font-weight: 400;
+    font-size: 10px;
+    color: global.$grey;
+    margin-left: 1rem;
+  }
+
+  &__middle-comp-bottom-span-in-title {
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    margin-right: .5rem;
+
+    &--1 {background: radial-gradient(518.44% 414.3% at 83.37% 8.51%, #8A40FC 0%, #D577F3 42.85%, #FA9BC4 86.98%);}
+    &--2 {background-color: white;}
+  }
+
+  &__bottom-bottom {
+    height: 230px;
+    background-color: global.$gunmetal;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  &__bottom-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+}
