@@ -5,7 +5,7 @@ import { Line } from 'react-chartjs-2';
 export default function MainLineChart(props) {
     const labels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
     const options = {
-        responsive: true,
+        responsive: false,
         scales: {
             x: {grid: {display: false}, ticks: {color: 'rgba(255, 255, 255, 0.45)',}},
             y: {grid: {display: false}, ticks: {color: 'rgba(255, 255, 255, 0.45)',}}

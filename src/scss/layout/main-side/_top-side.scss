@@ -1,1 +1,73 @@
 // Codes By Mahdi Tasha
+@use "../../global";
+
+.main-side {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  &__top-form-btn {
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__top-form {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: global.$gunmetal;
+    border-radius: 10px;
+  }
+
+  &__top-form-input {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: global.$grey;
+    outline: none;
+
+    &::placeholder {color: global.$grey;}
+  }
+
+  &__top-btn-link {display: block;}
+  &__top-notif-btns-holder {
+    display: flex;
+
+    &>a:first-of-type {margin-right: 1rem;}
+  }
+
+  &__top-btn {
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: global.$gunmetal;
+    border: none;
+    position: relative;
+  }
+
+  &__top-btn-notif-count {
+    position: absolute;
+    top: 5px;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    background-color: global.$blue-magenta-violet;
+    color: white;
+    border-radius: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

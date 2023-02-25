@@ -6,8 +6,10 @@ export default function TopSideComponent() {
     return (
         <div className='main-side__top'>
             <MainSearchComponent />
-            <MainNotifableButton type={'massage'} notificationsCount={2}/>
-            <MainNotifableButton type={'notifications'} notificationsCount={4}/>
+            <div className='main-side__top-notif-btns-holder'>
+                <MainNotifableButton type={'massage'} notificationsCount={2}/>
+                <MainNotifableButton type={'notifications'} notificationsCount={4}/>
+            </div>
         </div>
     );
 }
