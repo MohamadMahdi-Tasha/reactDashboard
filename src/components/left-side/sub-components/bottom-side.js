@@ -4,9 +4,9 @@ import BottomImage from './../../../assets/img/dashboard/left-side/img-bottom.pn
 export default function BottomSideComponent() {
     return (
         <a className='left-side__bottom' href={'#'}>
-            <img src={BottomImage} alt="Upgrade To Pro"/>
-            <span>Upgrade to Pro</span>
-            <span>Check your magic on this Pro Dashboard</span>
+            <img className='left-side__bottom-img' src={BottomImage} alt="Upgrade To Pro"/>
+            <span className='left-side__bottom-title'>Upgrade to Pro</span>
+            <span className='left-side__bottom-subtitle'>Check your magic on this Pro Dashboard</span>
         </a>
     );
 }

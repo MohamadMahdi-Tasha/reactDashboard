@@ -2,11 +2,6 @@
 @use '../../global';
 
 .left-side {
-  &__bottom {
-    display: block;
-    padding: 1rem;
-  }
-
   &__top,&__bottom {
     background-color: global.$gunmetal;
     border-radius: 20px;

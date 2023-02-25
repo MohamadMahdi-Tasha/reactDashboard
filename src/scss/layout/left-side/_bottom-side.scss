@@ -1,0 +1,32 @@
+// Codes By Mahdi Tasha
+@use "../../global";
+
+.left-side {
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  &__bottom-img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+
+  &__bottom-title {
+    margin-bottom: .5rem;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__bottom-subtitle {
+    color: global.$grey;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
