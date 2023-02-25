@@ -1,11 +1,11 @@
 // Codes By Mahdi Tasha
 @use '../global';
 @forward "left-side/index";
-@forward "main-side";
+@forward "main-side/index";
 @forward "right-side";
 
 // For Debugging
-.right-side,.main-side {display: none;}
+.right-side {display: none;}
 
 // Styles
 .dashboard {
