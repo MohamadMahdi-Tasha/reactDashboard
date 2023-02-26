@@ -178,7 +178,7 @@
   }
 
   &__bottom-bottom {
-    height: 230px;
+    height: 302px;
     background-color: global.$gunmetal;
     padding: 1rem;
     border-radius: 20px;
@@ -239,7 +239,7 @@
 
   &__bottom-table-holder {
     overflow: auto;
-    height: 150px;
+    height: 220px;
 
     &::-webkit-scrollbar {width: 5px;height: 5px;}
     &::-webkit-scrollbar-corner {display: none;}

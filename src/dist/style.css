@@ -342,7 +342,7 @@ legend {
   text-align: center;
   flex-direction: column;
   padding: 3rem 1rem;
-  height: 230px;
+  height: 302px;
 }
 .left-side__bottom-img {
   width: 70px;
@@ -589,7 +589,7 @@ legend {
   margin-left: 1rem;
 }
 .main-side__bottom-bottom {
-  height: 230px;
+  height: 302px;
   background-color: #272D35;
   padding: 1rem;
   border-radius: 20px;
@@ -650,7 +650,7 @@ legend {
 }
 .main-side__bottom-table-holder {
   overflow: auto;
-  height: 150px;
+  height: 220px;
 }
 .main-side__bottom-table-holder::-webkit-scrollbar {
   width: 5px;
