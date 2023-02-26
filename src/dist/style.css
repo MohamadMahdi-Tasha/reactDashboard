@@ -289,11 +289,11 @@ legend {
   font-size: 14px;
   padding-block: 1rem;
 }
-.left-side__top-ul-one > .left-side__top-item:last-of-type > .left-side__top-link {
-  padding-bottom: 0;
-}
 .left-side__top-ul-one > .left-side__top-item:first-of-type > .left-side__top-link {
   padding-top: 0;
+}
+.left-side__top-ul-one > .left-side__top-item:last-of-type > .left-side__top-link {
+  padding-bottom: 0;
 }
 .left-side__top-link--active {
   color: white;
@@ -312,6 +312,7 @@ legend {
 }
 .left-side__top-ul-two > li:last-of-type > a {
   padding-bottom: 0;
+  color: #CD5656;
 }
 .left-side__top-theme-btn {
   display: flex;
