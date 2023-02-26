@@ -34,11 +34,11 @@ export default function MainMiddleComponents(props) {
                 <div className='main-side__middle-comp-svg-holder'><MainSvgState for={'Your Finance Target'} value={78}/></div>
                 <div className='main-side__middle-comp-bottom-holder'>
                     <div className='main-side__middle-comp-bottom-item'>
-                        <h6 className='main-side__middle-comp-bottom-title'><span className='main-side__middle-comp-bottom-span-in-title main-side__middle-comp-bottom-span-in-title--1'></span>Result Achieved</h6>
+                        <h6 className='main-side__middle-comp-bottom-title'>Result Achieved</h6>
                         <p className='main-side__middle-comp-bottom-subtitle'>Achieved well and smoothly</p>
                     </div>
                     <div className='main-side__middle-comp-bottom-item'>
-                        <h6 className='main-side__middle-comp-bottom-title'><span className='main-side__middle-comp-bottom-span-in-title main-side__middle-comp-bottom-span-in-title--2'></span>In The Process</h6>
+                        <h6 className='main-side__middle-comp-bottom-title'>In The Process</h6>
                         <p className='main-side__middle-comp-bottom-subtitle'>Waiting in target process</p>
                     </div>
                 </div>

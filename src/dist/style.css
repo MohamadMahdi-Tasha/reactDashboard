@@ -500,6 +500,7 @@ legend {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 0;
 }
 .main-side__dropdown {
   position: absolute;
@@ -510,6 +511,7 @@ legend {
   transition: 0.3s;
   width: 90px;
   height: 150px;
+  z-index: 1000;
 }
 .main-side__dropdown[data-opened=true] {
   opacity: 1;
@@ -554,30 +556,36 @@ legend {
   justify-content: space-between;
   gap: 20px;
 }
+.main-side__middle-comp-bottom-holder .main-side__middle-comp-bottom-item:first-of-type > .main-side__middle-comp-bottom-title::before {
+  background: radial-gradient(518.44% 414.3% at 83.37% 8.51%, #8A40FC 0%, #D577F3 42.85%, #FA9BC4 86.98%);
+}
+.main-side__middle-comp-bottom-holder .main-side__middle-comp-bottom-item:last-of-type > .main-side__middle-comp-bottom-title::before {
+  background-color: white;
+}
 .main-side__middle-comp-bottom-title {
   display: flex;
   font-weight: 500;
   font-size: 12px;
   color: white;
+  padding-left: 1rem;
   margin-bottom: 1rem;
+  position: relative;
+}
+.main-side__middle-comp-bottom-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  display: block;
 }
 .main-side__middle-comp-bottom-subtitle {
   font-weight: 400;
   font-size: 10px;
   color: #919191;
   margin-left: 1rem;
-}
-.main-side__middle-comp-bottom-span-in-title {
-  width: 9px;
-  height: 9px;
-  border-radius: 100%;
-  margin-right: 0.5rem;
-}
-.main-side__middle-comp-bottom-span-in-title--1 {
-  background: radial-gradient(518.44% 414.3% at 83.37% 8.51%, #8A40FC 0%, #D577F3 42.85%, #FA9BC4 86.98%);
-}
-.main-side__middle-comp-bottom-span-in-title--2 {
-  background-color: white;
 }
 .main-side__bottom-bottom {
   height: 230px;
@@ -589,6 +597,70 @@ legend {
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 2rem;
+  color: white;
+}
+.main-side__bottom-table-heading {
+  text-align: start;
+  color: #919191;
+  font-weight: 500;
+  font-size: 12px;
+  padding-bottom: 2rem;
+  white-space: nowrap;
+}
+.main-side__bottom-table-cell {
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  padding-bottom: 2rem;
+  position: relative;
+  white-space: nowrap;
+}
+.main-side__bottom-table-cell:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+.main-side__bottom-table-cell:nth-of-type(4) {
+  padding-left: 1rem;
+}
+.main-side__bottom-table-cell:nth-of-type(4)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  display: block;
+}
+.main-side__bottom-table-cell:nth-of-type(4)[data-status="Financial Officer"]::before {
+  background-color: #D261BB;
+}
+.main-side__bottom-table-cell:nth-of-type(4)[data-status="Project Manager"]::before {
+  background-color: #94DAFF;
+}
+.main-side__bottom-table-cell:not(:last-of-type) {
+  padding-right: 2rem;
+}
+.main-side__bottom-table-img {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+.main-side__bottom-table-holder {
+  overflow: auto;
+  height: 150px;
+}
+.main-side__bottom-table-holder::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.main-side__bottom-table-holder::-webkit-scrollbar-corner {
+  display: none;
+}
+.main-side__bottom-table-holder::-webkit-scrollbar-thumb {
+  background-color: #919191;
+  border-radius: 20rem;
 }
 
 .right-side {

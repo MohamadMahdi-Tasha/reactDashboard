@@ -76,6 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 0;
   }
 
   &__dropdown {
@@ -87,6 +88,7 @@
     transition: .3s;
     width: 90px;
     height: 150px;
+    z-index: 1000;
 
     &[data-opened = 'true'] {
       opacity: 1;
@@ -137,6 +139,14 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    .main-side__middle-comp-bottom-item:first-of-type > .main-side__middle-comp-bottom-title::before {
+      background: radial-gradient(518.44% 414.3% at 83.37% 8.51%, #8A40FC 0%, #D577F3 42.85%, #FA9BC4 86.98%);
+    }
+
+    .main-side__middle-comp-bottom-item:last-of-type > .main-side__middle-comp-bottom-title::before {
+      background-color: white;
+    }
   }
 
   &__middle-comp-bottom-title {
@@ -144,7 +154,20 @@
     font-weight: 500;
     font-size: 12px;
     color: white;
+    padding-left: 1rem;
     margin-bottom: 1rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 9px;
+      height: 9px;
+      border-radius: 100%;
+      display: block;
+    }
   }
 
   &__middle-comp-bottom-subtitle {
@@ -152,16 +175,6 @@
     font-size: 10px;
     color: global.$grey;
     margin-left: 1rem;
-  }
-
-  &__middle-comp-bottom-span-in-title {
-    width: 9px;
-    height: 9px;
-    border-radius: 100%;
-    margin-right: .5rem;
-
-    &--1 {background: radial-gradient(518.44% 414.3% at 83.37% 8.51%, #8A40FC 0%, #D577F3 42.85%, #FA9BC4 86.98%);}
-    &--2 {background-color: white;}
   }
 
   &__bottom-bottom {
@@ -175,5 +188,61 @@
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 2rem;
+    color: white;
+  }
+
+  &__bottom-table-heading {
+    text-align: start;
+    color: global.$grey;
+    font-weight: 500;
+    font-size: 12px;
+    padding-bottom: 2rem;
+    white-space: nowrap;
+  }
+
+  &__bottom-table-cell {
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    padding-bottom: 2rem;
+    position: relative;
+    white-space: nowrap;
+
+    &:nth-of-type(1){display: flex;align-items: center;}
+
+    &:nth-of-type(4) {
+      padding-left: 1rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 9px;
+        height: 9px;
+        border-radius: 100%;
+        display: block;
+      }
+      &[data-status = 'Financial Officer']::before {background-color: global.$sky-magenta;}
+      &[data-status = 'Project Manager']::before {background-color: global.$pale-cyan;}
+    }
+
+    &:not(:last-of-type) {padding-right: 2rem;}
+  }
+
+  &__bottom-table-img {
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+    margin-right: 1rem;
+  }
+
+  &__bottom-table-holder {
+    overflow: auto;
+    height: 150px;
+
+    &::-webkit-scrollbar {width: 5px;height: 5px;}
+    &::-webkit-scrollbar-corner {display: none;}
+    &::-webkit-scrollbar-thumb {background-color: global.$grey;border-radius: 20rem;}
   }
 }
