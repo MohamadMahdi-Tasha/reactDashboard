@@ -8,14 +8,16 @@ export default function MainMiddleComponents(props) {
         const date = new Date();
         const dayOfWeek = date.getDay();
         const dayOfMonth = date.getDate();
-        const weekDaysName = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
-        const dayOfWeekName = weekDaysName[dayOfWeek - 1];
+        const weekDaysName = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        const dayOfWeekName = weekDaysName[dayOfWeek];
         const monthName = date.toLocaleString('default', {month: 'long'});
         const year = date.getFullYear();
 
         return (
             <div className='main-side__middle-comp'>
-                <h6 className='main-side__middle-com-title'>{dayOfWeekName}, {dayOfMonth} {monthName} {year}</h6>
+                <h6 className='main-side__middle-com-title'>
+                    {dayOfWeekName} , {dayOfMonth} {monthName} {year}
+                </h6>
                 <MainLineChart data={[200, 250, 300, 250, 260, 300, 350]}/>
             </div>
         )
