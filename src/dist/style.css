@@ -433,6 +433,21 @@ legend {
   justify-content: center;
 }
 
+@media (max-width: 1109px) {
+  .main-side__top {
+    background-color: #272D35;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .main-side__top-form-input {
+    background-color: transparent;
+  }
+  .main-side__top-btn {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+}
 .main-side__bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -483,6 +498,9 @@ legend {
   padding: 1rem;
   border-radius: 20px;
   height: 253px;
+}
+.main-side__middle-comp > canvas {
+  margin-inline: auto;
 }
 .main-side__middle-com-title {
   text-align: center;
@@ -665,6 +683,11 @@ legend {
   border-radius: 20rem;
 }
 
+@media (max-width: 1109px) {
+  .main-side__bottom-top, .main-side__middle {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .right-side__profile {
   display: flex;
   flex-direction: column;

@@ -77,3 +77,20 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 1109px) {
+  .main-side {
+    &__top {
+      background-color: global.$gunmetal;
+      border-radius: 20px;
+      align-items: center;
+    }
+
+    &__top-form-input {background-color: transparent;}
+    &__top-btn {
+      background-color: transparent;
+      width: auto;
+      height: auto;
+    }
+  }
+}
