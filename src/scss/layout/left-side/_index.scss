@@ -1,3 +1,30 @@
 // Codes By Mahdi Tasha
+@use "../../global";
 @forward "top-side";
 @forward "bottom-side";
+
+@media (max-width: 991px) {
+  .left-side {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 1002;
+    background-color: global.$gunmetal;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+
+    &__top, &__bottom {border-radius: 0;}
+    &__mobile-close-btn {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: global.$sky-magenta;
+      color: white;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      border: none;
+    }
+  }
+}

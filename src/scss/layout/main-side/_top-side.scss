@@ -2,6 +2,7 @@
 @use "../../global";
 
 .main-side {
+  &__top-left-side-toggler {display: none;}
   &__top {
     display: flex;
     justify-content: space-between;
@@ -100,5 +101,15 @@
   .main-side {
     &__top-notif-btns-holder {display: none;}
     &__top-form {width: 100%;}
+
+    &__top-left-side-toggler {
+      display: block;
+      margin-right: 2rem;
+      height: 50px;
+      width: 50px;
+      color: white;
+      border: none;
+      background-color: transparent;
+    }
   }
 }

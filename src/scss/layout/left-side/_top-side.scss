@@ -2,6 +2,8 @@
 @use '../../global';
 
 .left-side {
+  &__mobile-close-btn {display: none;}
+
   &__top,&__bottom {
     background-color: global.$gunmetal;
     border-radius: 20px;
