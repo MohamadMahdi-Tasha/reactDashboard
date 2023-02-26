@@ -1,43 +1,14 @@
 // Codes By Mahdi Tasha
+import profileImage from '../../../../assets/img/dashboard/right-side/img-emmy-profile.png';
+
 export default function Profile(props) {
-    const rightSideImagesPath = '../../../../assets/img/dashboard/right-side/';
-    const nameProp = props.name;
-    let profileToSelect;
-    const profiles = {
-        emmy: {
-            name: 'Emmy Dansom',
-            img: rightSideImagesPath.concat('img-emmy-profile.png'),
-            role: 'CEO'
-        },
-        jonie: {
-            name: 'Jonie Juger',
-            img: rightSideImagesPath.concat('img-jonie-profile.png'),
-            role: 'Project Manager'
-        },
-        sarah: {
-            name: 'Sarah Hosten',
-            img: rightSideImagesPath.concat('img-sarah-profile.png'),
-            role: 'Graphic Designer'
-        },
-        deckrad: {
-            name: 'Deckrad Anne',
-            img: rightSideImagesPath.concat('img-deckrad-profile.png'),
-            role: 'Financial Treasurer'
-        }
-    }
-
-    switch (nameProp) {
-        case "emmy": profileToSelect = profiles.emmy;break;
-        case "jonie": profileToSelect = profiles.jonie;break;
-        case "sarah": profileToSelect = profiles.sarah;break;
-        case "deckrad": profileToSelect = profiles.deckrad;break;
-    }
-
     return (
-        <div>
-            <img src={profileToSelect.img} alt={profileToSelect.name}/>
-            <h6>{profileToSelect.name}</h6>
-            <h6>{profileToSelect.role}</h6>
+        <div className='right-side__profile'>
+            <div className='right-side__profile-img-holder'>
+                <img className='right-side__profile-img' src={profileImage} alt='Emmy Dansom'/>
+            </div>
+            <h6 className='right-side__profile-name'>Emmy Dansom</h6>
+            <h6 className='right-side__profile-role'>CEO</h6>
         </div>
     );
 }

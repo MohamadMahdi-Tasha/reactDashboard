@@ -5,8 +5,8 @@ import PersonRelated from "./sub-components/person-realted";
 
 export default function ProfileCard(props) {
     return (
-        <div>
-            <Profile name={props.name}/>
+        <div className='right-side__profile-card'>
+            <Profile/>
             <ul>
                 <li>
                     <a href="#">
@@ -47,8 +47,8 @@ export default function ProfileCard(props) {
                 </li>
             </ul>
             <hr/>
-            <ProfileAbout person={props.name}/>
-            <PersonRelated person={props.name}/>
+            <ProfileAbout/>
+            <PersonRelated/>
         </div>
     );
 }

@@ -1,8 +1,8 @@
 // Codes By Mahdi Tasha
 @use '../global';
-@forward "left-side";
-@forward "main-side";
-@forward "right-side";
+@forward "left-side/index";
+@forward "main-side/index";
+@forward "right-side/index";
 
 // Styles
 .dashboard {

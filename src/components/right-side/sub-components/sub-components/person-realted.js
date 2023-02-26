@@ -1,24 +1,15 @@
 // Codes By Mahdi Tasha
 import RelatedProfile from './related-profile';
+import jonieImg from '../../../../assets/img/dashboard/right-side/img-jonie-profile.png';
+import sarahImg from '../../../../assets/img/dashboard/right-side/img-sarah-profile.png';
+import deckradImg from '../../../../assets/img/dashboard/right-side/img-deckrad-profile.png';
 
-export default function PersonRealted(props) {
-    const nameProp = props.person;
-    let profileToSelect;
-    const relatedProfiles = {
-        emmy: ['jonie', 'sarah', 'deckrad'],
-        jonie: ['emmy', 'sarah', 'deckrad'],
-        sarah: ['emmy', 'jonie', 'deckrad'],
-        deckrad: ['emmy', 'jonie', 'sarah']
-    }
-
-    switch (nameProp) {
-        case "emmy": profileToSelect = relatedProfiles.emmy;break;
-        case "jonie": profileToSelect = relatedProfiles.jonie;break;
-        case "sarah": profileToSelect = relatedProfiles.sarah;break;
-        case "deckrad": profileToSelect = relatedProfiles.deckrad;break;
-    }
-
+export default function PersonRealted() {
     return (
-        <ul>{profileToSelect.map(profile => <RelatedProfile name={profile} />)}</ul>
+        <ul>
+            <RelatedProfile img={jonieImg} role={'Project Manager'} name={'Jonie Juger'} />
+            <RelatedProfile img={sarahImg} role={'Graphic Designer'} name={'Sarah Hosten'} />
+            <RelatedProfile img={deckradImg} role={'Financial Treasurer'} name={'Deckrad Anne'} />
+        </ul>
     );
 }
