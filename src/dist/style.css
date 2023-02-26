@@ -372,15 +372,21 @@ legend {
 }
 @media (max-width: 991px) {
   .left-side {
+    top: 0;
     overflow: auto;
     position: fixed;
-    top: 0;
-    right: 0;
     width: 70%;
     height: 100%;
     z-index: 1002;
     background-color: #272D35;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  .left-side[data-opened=true] {
+    right: 0;
+  }
+  .left-side[data-opened=false] {
+    right: -70%;
   }
   .left-side__top, .left-side__bottom {
     border-radius: 0;
