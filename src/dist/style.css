@@ -342,7 +342,7 @@ legend {
   text-align: center;
   flex-direction: column;
   padding: 3rem 1rem;
-  height: 302px;
+  height: 317px;
 }
 .left-side__bottom-img {
   width: 70px;
@@ -576,9 +576,9 @@ legend {
   content: "";
   position: absolute;
   left: 0;
-  top: 1px;
-  width: 9px;
-  height: 9px;
+  top: 0;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
   display: block;
 }
@@ -589,7 +589,7 @@ legend {
   margin-left: 1rem;
 }
 .main-side__bottom-bottom {
-  height: 302px;
+  height: 317px;
   background-color: #272D35;
   padding: 1rem;
   border-radius: 20px;
@@ -627,9 +627,9 @@ legend {
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
-  width: 9px;
-  height: 9px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
   display: block;
 }
@@ -777,6 +777,37 @@ legend {
   background-color: #272D35;
   height: 150px;
   border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-side__money-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.right-side__money-subtitle {
+  font-weight: 500;
+  font-size: 12px;
+  color: #919191;
+  position: relative;
+  padding-left: 1rem;
+}
+.right-side__money-subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #D261BB;
+  border-radius: 100%;
+}
+.right-side__money-price {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
 }
 
 .dashboard {
