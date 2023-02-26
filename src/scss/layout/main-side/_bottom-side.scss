@@ -254,3 +254,16 @@
 @media (max-width: 1109px) {
   .main-side__bottom-top, .main-side__middle {grid-template-columns: repeat(1, 1fr);}
 }
+
+@media (max-width: 991px) {
+  .main-side {
+    &__circle-state-component {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__middle-comp {height: auto;}
+    &__middle-comp-bottom-holder {flex-direction: column;}
+  }
+}

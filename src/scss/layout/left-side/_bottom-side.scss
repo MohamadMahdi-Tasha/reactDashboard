@@ -31,3 +31,11 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 991px) {
+  .left-side {
+    &__bottom {
+      height: auto;
+    }
+  }
+}

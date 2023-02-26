@@ -44,3 +44,18 @@
     color: white;
   }
 }
+
+@media (max-width: 991px) {
+  .right-side {
+    &__money {
+      height: auto;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column-reverse;
+    }
+
+    &__money-price  {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -80,17 +80,25 @@
 
 @media (max-width: 1109px) {
   .main-side {
+    &__top-form-input {background-color: transparent;}
+
     &__top {
       background-color: global.$gunmetal;
       border-radius: 20px;
       align-items: center;
     }
 
-    &__top-form-input {background-color: transparent;}
     &__top-btn {
       background-color: transparent;
       width: auto;
       height: auto;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .main-side {
+    &__top-notif-btns-holder {display: none;}
+    &__top-form {width: 100%;}
   }
 }

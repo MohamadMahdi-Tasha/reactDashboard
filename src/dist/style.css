@@ -362,6 +362,11 @@ legend {
   font-weight: 500;
 }
 
+@media (max-width: 991px) {
+  .left-side__bottom {
+    height: auto;
+  }
+}
 .main-side__top {
   display: flex;
   justify-content: space-between;
@@ -434,18 +439,26 @@ legend {
 }
 
 @media (max-width: 1109px) {
+  .main-side__top-form-input {
+    background-color: transparent;
+  }
   .main-side__top {
     background-color: #272D35;
     border-radius: 20px;
     align-items: center;
   }
-  .main-side__top-form-input {
-    background-color: transparent;
-  }
   .main-side__top-btn {
     background-color: transparent;
     width: auto;
     height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .main-side__top-notif-btns-holder {
+    display: none;
+  }
+  .main-side__top-form {
+    width: 100%;
   }
 }
 .main-side__bottom {
@@ -688,6 +701,19 @@ legend {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (max-width: 991px) {
+  .main-side__circle-state-component {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-side__middle-comp {
+    height: auto;
+  }
+  .main-side__middle-comp-bottom-holder {
+    flex-direction: column;
+  }
+}
 .right-side__profile {
   display: flex;
   flex-direction: column;
@@ -796,6 +822,25 @@ legend {
   font-size: 12px;
 }
 
+@media (max-width: 991px) {
+  .right-side__profile-btns-ul {
+    flex-direction: column-reverse;
+  }
+  .right-side__profile-btn {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  .right-side__related-li {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .right-side__related-img-holder {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
 .right-side__money {
   padding: 1rem;
   background-color: #272D35;
@@ -834,12 +879,30 @@ legend {
   color: white;
 }
 
+@media (max-width: 991px) {
+  .right-side__money {
+    height: auto;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column-reverse;
+  }
+  .right-side__money-price {
+    margin-bottom: 1rem;
+  }
+}
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   gap: 20px;
   background-color: #0E131A;
   padding: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .dashboard {
+    padding: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
