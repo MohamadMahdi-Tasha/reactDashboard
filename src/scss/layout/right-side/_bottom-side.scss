@@ -2,7 +2,10 @@
 @use "../../global";
 
 .right-side {
-  .bottom {
-
+  &__money {
+    padding: 1rem;
+    background-color: global.$gunmetal;
+    height: 150px;
+    border-radius: 20px;
   }
 }
