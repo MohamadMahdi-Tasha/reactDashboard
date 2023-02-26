@@ -9,7 +9,7 @@ export default function ProfileCard() {
         <div className='right-side__profile-card'>
             <Profile/>
             <ProfileButtonsList />
-            <hr/>
+            <hr className='right-side__hr'/>
             <ProfileAbout/>
             <PersonRelated/>
         </div>

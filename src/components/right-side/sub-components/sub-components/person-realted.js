@@ -6,7 +6,7 @@ import deckradImg from '../../../../assets/img/dashboard/right-side/img-deckrad-
 
 export default function PersonRealted() {
     return (
-        <ul>
+        <ul className='right-side__related-ul'>
             <RelatedProfile img={jonieImg} role={'Project Manager'} name={'Jonie Juger'} />
             <RelatedProfile img={sarahImg} role={'Graphic Designer'} name={'Sarah Hosten'} />
             <RelatedProfile img={deckradImg} role={'Financial Treasurer'} name={'Deckrad Anne'} />

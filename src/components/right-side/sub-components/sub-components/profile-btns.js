@@ -13,7 +13,7 @@ export default function ProfileBtns(props) {
     return (
         <li className='right-side__profile-btn-li'>
             <a href="#" className='right-side__profile-btn-link'>
-                <button className='right-side__profile-btn'>
+                <button tabIndex='-1' className='right-side__profile-btn'>
                     {icon}
                 </button>
             </a>

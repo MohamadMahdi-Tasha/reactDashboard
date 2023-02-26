@@ -664,8 +664,112 @@ legend {
   border-radius: 20rem;
 }
 
-.right-side {
-  background-color: white;
+.right-side__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right-side__profile-card {
+  padding: 1rem;
+  margin-bottom: 20px;
+  background-color: #272D35;
+  border-radius: 20px;
+}
+.right-side__profile-img-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 100%;
+  border: 1px solid #D261BB;
+  margin-bottom: 1rem;
+}
+.right-side__profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+.right-side__profile-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.right-side__profile-role {
+  font-weight: 500;
+  font-size: 12px;
+  color: #919191;
+  margin-bottom: 1rem;
+}
+.right-side__profile-btns-ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.right-side__profile-btn {
+  height: 60px;
+  width: 60px;
+  background-color: #7D12AF;
+  border: none;
+  border-radius: 10px;
+}
+.right-side__hr {
+  border-color: #919191;
+  margin-block: 3rem;
+}
+.right-side__about-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.right-side__about-paragraph {
+  font-weight: 500;
+  font-size: 12px;
+  color: #919191;
+  margin-bottom: 2rem;
+}
+.right-side__related-ul > li:nth-of-type(1) > .right-side__related-img-holder {
+  border-color: #94DAFF;
+}
+.right-side__related-ul > li:nth-of-type(2) > .right-side__related-img-holder {
+  border-color: #A453CB;
+}
+.right-side__related-ul > li:nth-of-type(3) > .right-side__related-img-holder {
+  border-color: #D261BB;
+}
+.right-side__related-ul > li:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+.right-side__related-li {
+  display: flex;
+  align-items: center;
+}
+.right-side__related-img-holder {
+  border-radius: 100%;
+  margin-right: 1rem;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+.right-side__related-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.right-side__related-name {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 14px;
+}
+.right-side__related-role {
+  color: #919191;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .dashboard {

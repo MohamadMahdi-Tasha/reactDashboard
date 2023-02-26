@@ -2,4 +2,121 @@
 @use "../../global";
 
 .right-side {
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__profile-card {
+    padding: 1rem;
+    margin-bottom: 20px;
+    background-color: global.$gunmetal;
+    border-radius: 20px;
+  }
+
+  &__profile-img-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 100%;
+    border: 1px solid global.$sky-magenta;
+    margin-bottom: 1rem;
+  }
+
+  &__profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+  }
+
+  &__profile-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin-bottom: .5rem;
+  }
+
+  &__profile-role {
+    font-weight: 500;
+    font-size: 12px;
+    color: global.$grey;
+    margin-bottom: 1rem;
+  }
+
+  &__profile-btns-ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__profile-btn {
+    height: 60px;
+    width: 60px;
+    background-color: global.$magenta-violet;
+    border: none;
+    border-radius: 10px;
+  }
+
+  &__hr {
+    border-color: global.$grey;
+    margin-block: 3rem;
+  }
+
+  &__about-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    margin-bottom: .5rem;
+  }
+
+  &__about-paragraph {
+    font-weight: 500;
+    font-size: 12px;
+    color: global.$grey;
+    margin-bottom: 2rem;
+  }
+
+  &__related-ul {
+    > li:nth-of-type(1) > .right-side__related-img-holder {border-color: global.$pale-cyan;}
+    > li:nth-of-type(2) > .right-side__related-img-holder {border-color: global.$deep-lilac;}
+    > li:nth-of-type(3) > .right-side__related-img-holder {border-color: global.$sky-magenta;}
+    > li:not(:last-of-type) {margin-bottom: 1rem;}
+  }
+
+  &__related-li {
+    display: flex;
+    align-items: center;
+  }
+
+  &__related-img-holder {
+    border-radius: 100%;
+    margin-right: 1rem;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+  }
+
+  &__related-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+
+  &__related-name {
+    color: white;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__related-role {
+    color: global.$grey;
+    font-weight: 400;
+    font-size: 12px;
+  }
 }
