@@ -342,6 +342,7 @@ legend {
   text-align: center;
   flex-direction: column;
   padding: 3rem 1rem;
+  height: 230px;
 }
 .left-side__bottom-img {
   width: 70px;
