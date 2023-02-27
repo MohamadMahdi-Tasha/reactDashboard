@@ -13,10 +13,19 @@
     z-index: 1002;
     background-color: global.$gunmetal;
     box-shadow: 0 0 30px rgba(0,0,0,.2);
-    transition: .3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .5s;
 
-    &[data-opened = 'true'] {right: 0;}
-    &[data-opened = 'false'] {right: -70%;}
+    &[data-opened = 'true'] {
+      right: 0;
+      opacity: 1;
+    }
+
+    &[data-opened = 'false'] {
+      right: -70%;
+      opacity: 0;
+    }
 
     &__top, &__bottom {border-radius: 0;}
     &__mobile-close-btn {
