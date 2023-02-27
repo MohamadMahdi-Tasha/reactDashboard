@@ -2,7 +2,7 @@
 import MainSearchComponent from "./sub-components/main-search-component";
 import MainNotifableButton from "./sub-components/main-notifable-button";
 
-export default function TopSideComponent() {
+export default function TopSideComponent(props) {
     return (
         <div className='main-side__top'>
             <MainSearchComponent />
@@ -10,7 +10,7 @@ export default function TopSideComponent() {
                 <MainNotifableButton type={'massage'} notificationsCount={2}/>
                 <MainNotifableButton type={'notifications'} notificationsCount={4}/>
             </div>
-            <button className='main-side__top-left-side-toggler'>
+            <button className='main-side__top-left-side-toggler' onClick={props.onOpenLeftSideButtonClick}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                      className="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"

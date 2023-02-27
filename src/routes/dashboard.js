@@ -11,7 +11,7 @@ export default function Dashboard() {
     return (
         <div className='dashboard'>
             <LeftSideComponent isOpened={isOpened} onCloseButtonClick={() => setOpenOrClose(false)}/>
-            <MainSideComponent />
+            <MainSideComponent onOpenLeftSideButtonClick={() => setOpenOrClose(true)}/>
             <RightSideComponent />
         </div>
     );
