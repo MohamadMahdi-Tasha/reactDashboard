@@ -1,15 +1,11 @@
 // Codes By Mahdi Tasha
-import React, { useState, useEffect } from 'react';
 import LeftListItem from "./sub-components/left-list-item";
 import ThemeToggler from "./sub-components/left-theme-toggler";
 
-export default function TopSideComponent() {
-    const [isOpened, setOpenOrClose] = useState(true);
-    const handleCloseBtn = () => setOpenOrClose(false);
-
+export default function TopSideComponent(props) {
     return (
         <div className='left-side__top'>
-            <button className='left-side__mobile-close-btn' onClick={handleCloseBtn}>
+            <button className='left-side__mobile-close-btn' onClick={props.onCloseButtonClick}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x"
                      viewBox="0 0 16 16">
                     <path
